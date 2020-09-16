@@ -6,6 +6,7 @@ import CheckBox from './Sections/CheckBox'
 import RadioBox from './Sections/RadioBox'
 import SearchFeature from './Sections/SearchFeature'
 import { continents, price } from './Sections/Data'
+import Logo from './lodge.png'
 
 const { Meta } = Card;
 function LandingPage() {
@@ -139,9 +140,9 @@ function LandingPage() {
     }
 
     return (
-        <div style={{ width: '75%', margin: '3rem auto' }}>
+        <div style={{ width: '75%', margin: '3rem auto', backgroundColor: '#DCE1DE', padding: '3rem', borderRadius: '1rem' }}>
             <div style={{ textAlign: 'center' }}>
-                <h1>Welcome to the Travel Lodge</h1>
+                <img src={Logo} alt="mainLogo"></img>
                 <h2>Let's Experience The World! <Icon type="rocket"></Icon></h2>
             </div>
             {/* Filter */}
@@ -169,8 +170,6 @@ function LandingPage() {
                 />
 
             </div>
-
-
 
             {Products.length === 0 ?
                 <div style={{ display: 'flex', height: '300px', justifyContent: 'center', alignItems: 'center' }}>
