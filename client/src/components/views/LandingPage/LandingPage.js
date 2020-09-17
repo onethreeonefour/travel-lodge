@@ -184,7 +184,7 @@ function LandingPage() {
             <br />
             {PostSize >= Limit &&
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <Button type="primary" onClick={onLoadMore}>Load More</Button>
+                    <Button type="primary" onClick={onLoadMore} >Load More</Button>
                 </div>
             }
 
